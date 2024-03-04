@@ -1,0 +1,308 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestionDeEmpresas",
+    "dateExported": "2024-03-04T05:39:14.430Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "afa866d7-ef1a-4374-905c-434701847e07",
+            "name": "AdminRoutes",
+            "containerId": "",
+            "created": "2024-03-03T20:43:08.510Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "CompanyRoutes",
+            "containerId": "",
+            "created": "2024-03-03T20:43:27.936Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "1c045cff-cff0-4be0-9ad0-2cce9114f45b",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "afa866d7-ef1a-4374-905c-434701847e07",
+            "name": "register",
+            "url": "admin/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-03T20:43:59.756Z",
+            "modified": "2024-03-03T21:39:06.226Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pedro"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Chavez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "pechaz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d7f797ed-51de-4e99-a6b9-18b238f1dce1",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "afa866d7-ef1a-4374-905c-434701847e07",
+            "name": "login",
+            "url": "admin/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-03T20:44:06.486Z",
+            "modified": "2024-03-03T21:42:57.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "pechaz"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e3ffaac0-779e-45a3-8194-ecb76bf9fcb6",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "afa866d7-ef1a-4374-905c-434701847e07",
+            "name": "updateAdmin",
+            "url": "admin/update",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-04T04:49:13.439Z",
+            "modified": "2024-03-04T04:50:01.266Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZWY3ZTk2NjczYjFhMDZiMTMxN2MiLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1MjU4NjAsImV4cCI6MTcwOTU0MDI2MH0.Otm1AcAtZbsiHpjYaF7wJxcMO7sTzmDEdfplVxEBNHM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Peter"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c8fa53c-a966-49ec-b696-2acaf8de0519",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "afa866d7-ef1a-4374-905c-434701847e07",
+            "name": "deleteAdmin",
+            "url": "admin/delete/",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-04T04:50:16.056Z",
+            "modified": "2024-03-04T04:51:04.792Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZWY3ZTk2NjczYjFhMDZiMTMxN2MiLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1MjU4NjAsImV4cCI6MTcwOTU0MDI2MH0.Otm1AcAtZbsiHpjYaF7wJxcMO7sTzmDEdfplVxEBNHM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e8fa4a4-ebc2-4f27-baf2-500991e79f0a",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "addCompany",
+            "url": "company/add",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-04T04:51:56.429Z",
+            "modified": "2024-03-04T05:12:12.432Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Macdonals"
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "high"
+                    },
+                    {
+                        "name": "yearExpirience",
+                        "value": "40"
+                    },
+                    {
+                        "name": "companyCategory",
+                        "value": "Comida Rápida"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f423a7e4-7962-4190-b3d0-c2b7e21aba0a",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "updateCompany",
+            "url": "company/update/65e553e8f8b8d83be64a0acb",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-04T04:52:04.160Z",
+            "modified": "2024-03-04T04:58:10.152Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "VisteBliste S.A."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f766fb7c-b609-40af-a5b0-f909d92ea544",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "deleteCompany",
+            "url": "company/delete/65e55457e1654433d3e7918e",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-04T05:07:20.725Z",
+            "modified": "2024-03-04T05:07:49.416Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "90cf22e8-8918-4e04-aaf8-b78c6a311c73",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "displayCompanies",
+            "url": "company/display",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-04T05:19:08.846Z",
+            "modified": "2024-03-04T05:26:40.984Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae4ead90-d82a-4aa6-9be6-f28d20de404a",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "displayByfilter",
+            "url": "company/filter",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-04T05:25:38.452Z",
+            "modified": "2024-03-04T06:41:55.704Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "companyCategory",
+                        "value": "Comida Rápida",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "yearExpirience",
+                        "value": "40",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "impactLevel",
+                        "value": "high",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "47670a63-1520-4711-85f0-545d1ef3142a",
+            "colId": "a4f83a97-ba5c-466b-b2df-fc661f2c75e3",
+            "containerId": "74573530-129c-4acf-9d91-d4aea11b386b",
+            "name": "toExcel",
+            "url": "company/excel",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-04T06:38:28.827Z",
+            "modified": "2024-03-04T06:38:55.115Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTM0ZmRmNzc3YjEzNTIxNGEzZjciLCJ1c2VybmFtZSI6InBlY2hheiIsIm5hbWUiOiJQZWRybyIsInN1cm5hbWUiOiJDaGF2ZXoiLCJpYXQiOjE3MDk1Mjc4ODksImV4cCI6MTcwOTU0MjI4OX0.MPISE7vWNtsOWkSFkqRc-iX3uuzg1gfI69dJpamQcuM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:7770/"
+        }
+    }
+}
